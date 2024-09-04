@@ -1,24 +1,43 @@
-template<typename T>
+// template<typename T>
 
-class pair{
-    T x;
-    T y;
+// class pair{
+//     T x;
+//     T y;
     
-    public:
+//     public:
 
+//     void setX(T x){
+//         this->x = x;
+//     }
+
+//     T getX(){
+//         return x;
+//     }
+
+//     void setY(T y){
+//         this->y = y;
+//     }
+
+//     T getY(){
+//         return y;
+//     }
+// };
+
+template <typename T, typename V>
+class Pair{
+    T x;
+    V y;
+    public:
     void setX(T x){
         this->x = x;
     }
-
     T getX(){
         return x;
     }
-
-    void setY(T y){
+    void setY(V y){
         this->y = y;
     }
-
-    T getY(){
+    V getY(){
         return y;
     }
 };
